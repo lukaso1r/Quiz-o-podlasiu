@@ -2,12 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Question from './Question';
+import Header from './reusable/header';
+import Welcome from './reusable/welcome';
 import reportWebVitals from './reportWebVitals';
+import Authors from './reusable/authors';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Header />
+    <Welcome />
+    <Question />
+    <Authors />
   </React.StrictMode>
 );
 
