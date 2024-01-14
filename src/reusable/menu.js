@@ -3,7 +3,7 @@ import UserName from "./userName";
 
 function Menu(){
 
-    const [showUserName, setShowUserName] = useState(true);
+    const [showUserName, setShowUserName] = useState(false);
 
     const handleStartButtonClick = () => {
         setShowUserName(true);
