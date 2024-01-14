@@ -1,10 +1,41 @@
 {
+  "wyniki": [
+    {
+      "id": 1,
+      "nick": "Lukasz",
+      "punkty": 446,
+      "postac": "groupbober.svg"
+    },
+    {
+      "id": 2,
+      "nick": "Komar",
+      "punkty": 400,
+      "postac": "groupkon.svg"
+    },
+    {
+      "id": "2ba6",
+      "nick": "sdfsdf",
+      "punkty": 6,
+      "postac": "grouplis.svg"
+    },
+    {
+      "id": "8eef",
+      "nick": "Zosia",
+      "punkty": 10,
+      "postac": "grouplis.svg"
+    }
+  ],
   "questions": [
     {
       "id": 1,
       "title": "Stolica Podlasia?",
       "correctAnswer": "Białystok",
-      "answers": ["Lublin", "Warszawa", "Kraków", "Białystok"],
+      "answers": [
+        "Lublin",
+        "Warszawa",
+        "Kraków",
+        "Białystok"
+      ],
       "imageLink": "",
       "dateAdded": "2024-01-12"
     },
@@ -12,7 +43,12 @@
       "id": 2,
       "title": "Największe miasto województwa podlaskiego?",
       "correctAnswer": "Białystok",
-      "answers": ["Suwałki", "Łomża", "Zambrów", "Białystok"],
+      "answers": [
+        "Suwałki",
+        "Łomża",
+        "Zambrów",
+        "Białystok"
+      ],
       "imageLink": "",
       "dateAdded": "2024-01-12"
     },
@@ -20,7 +56,12 @@
       "id": 3,
       "title": "Gdzie znajduje się Biebrzański Park Narodowy?",
       "correctAnswer": "Podlasie",
-      "answers": ["Mazury", "Pomorze", "Śląsk", "Podlasie"],
+      "answers": [
+        "Mazury",
+        "Pomorze",
+        "Śląsk",
+        "Podlasie"
+      ],
       "imageLink": "",
       "dateAdded": "2024-01-12"
     },
@@ -28,7 +69,12 @@
       "id": 4,
       "title": "Jaka rzeka przepływa przez Białystok?",
       "correctAnswer": "Narew",
-      "answers": ["Wisła", "Bug", "Warta", "Narew"],
+      "answers": [
+        "Wisła",
+        "Bug",
+        "Warta",
+        "Narew"
+      ],
       "imageLink": "",
       "dateAdded": "2024-01-12"
     },
@@ -36,7 +82,12 @@
       "id": 5,
       "title": "Które jezioro jest największe w województwie podlaskim?",
       "correctAnswer": "Siemianówka",
-      "answers": ["Łebsko", "Mamry", "Jeziorak", "Siemianówka"],
+      "answers": [
+        "Łebsko",
+        "Mamry",
+        "Jeziorak",
+        "Siemianówka"
+      ],
       "imageLink": "",
       "dateAdded": "2024-01-12"
     },
@@ -44,7 +95,12 @@
       "id": 6,
       "title": "Jak nazywa się najstarszy park w Białymstoku?",
       "correctAnswer": "Park Zwierzyniecki",
-      "answers": ["Park Branicki", "Park Antoniuk", "Park Planty", "Park Zwierzyniecki"],
+      "answers": [
+        "Park Branicki",
+        "Park Antoniuk",
+        "Park Planty",
+        "Park Zwierzyniecki"
+      ],
       "imageLink": "",
       "dateAdded": "2024-01-12"
     },
@@ -52,7 +108,12 @@
       "id": 7,
       "title": "Kto jest patronem Białegostoku?",
       "correctAnswer": "Jan Kiliński",
-      "answers": ["Tadeusz Kościuszko", "Józef Piłsudski", "Władysław Sikorski", "Jan Kiliński"],
+      "answers": [
+        "Tadeusz Kościuszko",
+        "Józef Piłsudski",
+        "Władysław Sikorski",
+        "Jan Kiliński"
+      ],
       "imageLink": "",
       "dateAdded": "2024-01-12"
     },
@@ -60,7 +121,12 @@
       "id": 8,
       "title": "Ile województw graniczy z województwem podlaskim?",
       "correctAnswer": "Cztery",
-      "answers": ["Trzy", "Pięć", "Sześć", "Cztery"],
+      "answers": [
+        "Trzy",
+        "Pięć",
+        "Sześć",
+        "Cztery"
+      ],
       "imageLink": "",
       "dateAdded": "2024-01-12"
     },
@@ -68,7 +134,12 @@
       "id": 9,
       "title": "W którym roku powstało województwo podlaskie?",
       "correctAnswer": "1999",
-      "answers": ["1989", "2004", "2010", "1999"],
+      "answers": [
+        "1989",
+        "2004",
+        "2010",
+        "1999"
+      ],
       "imageLink": "",
       "dateAdded": "2024-01-12"
     },
@@ -76,7 +147,12 @@
       "id": 10,
       "title": "Jaki zamek znajduje się w Hajnówce?",
       "correctAnswer": "Zamek w Drohiczynie",
-      "answers": ["Zamek w Białowieży", "Zamek w Janowie Podlaskim", "Zamek w Ciechanowcu", "Zamek w Drohiczynie"],
+      "answers": [
+        "Zamek w Białowieży",
+        "Zamek w Janowie Podlaskim",
+        "Zamek w Ciechanowcu",
+        "Zamek w Drohiczynie"
+      ],
       "imageLink": "",
       "dateAdded": "2024-01-12"
     }

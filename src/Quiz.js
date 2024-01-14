@@ -8,6 +8,7 @@ function Quiz() {
   const { playerName } = useParams();
 
   const [questions, setQuestions] = useState([]);
+  const [quizStatus, setQuizStatus] = useState(0);
   const [playerPoints, setPlayerPoints] = useState(0);
 
   useEffect(() => {
@@ -23,6 +24,10 @@ function Quiz() {
     fetchData();
   }, []);
 
+  function test(){
+    console.log(quizStatus);
+  }
+
   return (
     <div id="quiz">
         <div id="playerNameQuiz">
@@ -31,8 +36,8 @@ function Quiz() {
         </div>
    
       <div id="quizQuestionContainer">
-        <Question setPlayerPoints={setPlayerPoints} questions={questions} />
-        <QuizEnd setPlayerPoints={setPlayerPoints} questions={questions} />
+        {quizStatus === 0 &&<Question setPlayerPoints={setPlayerPoints} questions={questions} setQuizStatus={setQuizStatus} quizStatus={quizStatus} />}
+        {quizStatus === 1 &&<QuizEnd playerName={playerName} setPlayerPoints={setPlayerPoints} playerPoints={playerPoints} setQuizStatus={setQuizStatus} quizStatus={quizStatus}/>}
       </div>
     </div>
   );

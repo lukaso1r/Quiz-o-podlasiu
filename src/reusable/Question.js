@@ -4,7 +4,7 @@ import databaseCon from "../databaseCon";
 
 const img = "pobrane.jpg"
 
-function Question({ setPlayerPoints, questions }) {
+function Question({ setPlayerPoints, questions, setQuizStatus, quizStatus }) {
  
     var idList = [];
 
@@ -14,16 +14,16 @@ function Question({ setPlayerPoints, questions }) {
         setPlayerPoints((prevPoints) => prevPoints + 1);
     };
 
-    
+
 
     function userAnswer(q){
         if(q===questions[id].correctAnswer){
             handleAnswerClick();
         }
-        setId(++id);
-        if(id>questions.length){
-            setId(--id);
-
+        if(id<questions.length-1){
+            setId(++id);
+        }else{
+            setQuizStatus(1);
         }
     }
 
@@ -42,9 +42,8 @@ function Question({ setPlayerPoints, questions }) {
 
     return (
         <div id="singleQuestion">
-            <button onClick={rndAnswer}>test</button>
             <h2 id="qTitle">
-                <span style={{ paddingRight: '2%' }}>
+                <span style={{ paddingRight: '1%' }}>
                 <span style={{ color: '#FF652F' }}>Q</span>{id+1}/{questions.length}
                 </span> 
                 {questions.length > id && questions[id] ? questions[id].title : ""}
