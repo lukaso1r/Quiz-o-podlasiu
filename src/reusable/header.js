@@ -5,7 +5,7 @@ function header(){
     return (
 
         <header>
-            <h1>Quiz o Podlasiu!</h1>
+            <a href="/"><h1>Quiz o Podlasiu!</h1></a>
         </header>
 
     );

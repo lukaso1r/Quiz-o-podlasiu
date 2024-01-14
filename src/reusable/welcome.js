@@ -1,9 +1,13 @@
 import React from "react";
 import Menu from './menu';
 
+
+
+
 function welcome(){
     return (
-        <div id="welcome">
+        <div id="welcome">  
+            
             <p>Witaj!</p>
             <h1>Kraina oddechu</h1>
             <h4>
@@ -12,6 +16,7 @@ function welcome(){
                 Odpowiedz na wszystkie pytania i sprawdź swoją wiedzę.
             </h4>
             <Menu/>
+            
        </div>
 
     );
