@@ -19,41 +19,7 @@ function Quiz(){
                         <p>445</p>
                     </div>
                 </li>
-                <li>
-                    <div>
-                        <img src="http://localhost:3000/img/postacie/groupdzik.svg"/>
-                        <p>Komar</p>
-                    </div>
-                    <div>
-                        <p>335</p>
-                    </div>
-                </li><li>
-                    <div>
-                        <img src="http://localhost:3000/img/postacie/groupkrowa.svg"/>
-                        <p>Adam</p>
-                    </div>
-                    <div>
-                        <p>645</p>
-                    </div>
-                </li><li>
-                    <div>
-                        <img src="http://localhost:3000/img/postacie/groupkura.svg"/>
-                        <p>Kuba</p>
-                    </div>
-                    <div>
-                        <p>435</p>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <img src="http://localhost:3000/img/postacie/grouplis.svg"/>
-                        <p>Zosia</p>
-                    </div>
-                    <div>
-                        <p>204</p>
-                    </div>
-                </li>
-                
+                               
             </ul>
        </div>
 

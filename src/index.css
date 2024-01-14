@@ -126,6 +126,16 @@ header{
   opacity: 60%;
 }
 
+#playerNameQuiz{
+  position: absolute;
+  left: 5%;
+  font-size: 1.6vw;
+}
+
+#playerNameAndPkt{
+  font-size: 2vw;
+}
+
 #quizQuestionContainer{
   width: 70%;
   margin: 2% auto;
@@ -246,3 +256,60 @@ li div{
   align-items: center;
 }
 
+#userName{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Przeźroczyste tło szare */
+  z-index: 999; /* Umieść na wierzchu innych elementów */
+  top: 0;
+}
+
+#userNameInputContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  color: black;
+  text-shadow: 3px 0px rgba(66, 68, 90, 1);
+  border: 2px solid rgba(66, 68, 90, 1);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  padding: 3% 1%;
+  gap: 33px;
+
+
+}
+
+#userNameInput{
+  width: 70%;
+  height: 3vw;
+  font-family: 'Marhey', sans-serif;
+  text-align: center;
+  font-size: 1.5vw;
+  padding: 2% 5%;
+}
+
+#startUserBtn{
+  background-color: #59b4df;
+  min-width: 50%;
+  font-family: 'Marhey', sans-serif;
+  text-align: center;
+  font-size: 1.5vw;
+  padding: 2% 5%;
+  border: 3px solid white;
+  border-radius: 25px;
+  color: white;
+  box-shadow: 0px 0px 32px -15px rgba(66, 68, 90, 1);
+  
+}
+
+#startUserBtn:hover{
+  background-color: #40baf3;
+  box-shadow: 0px 0px 32px -9px rgb(0, 0, 0);
+}

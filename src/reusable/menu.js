@@ -1,13 +1,24 @@
-import React from "react";
+import React, { useState } from 'react';
+import UserName from "./userName";
 
+function Menu(){
 
-function menu(){
+    const [showUserName, setShowUserName] = useState(true);
+
+    const handleStartButtonClick = () => {
+        setShowUserName(true);
+        // Dodaj inne logiki, jeśli potrzebujesz
+      };
+
     return (
         <div id="menu">
-            <a id="startBtn" href="/quiz">Rozpocznij!</a>
+            <button id="startBtn" onClick={handleStartButtonClick}>
+                Rozpocznij!
+            </button>
             <a href="/wyniki" id="statsBtn">Wyniki</a>
+            {showUserName && <UserName />}
        </div>
     );
 }
 
-export default menu;
+export default Menu;

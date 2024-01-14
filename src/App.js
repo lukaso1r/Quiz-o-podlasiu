@@ -13,12 +13,9 @@ const App = () => {
     <Router>
       <Header />
       <div>
-
-
-
         <Routes>
           <Route path="/" element={<Welcome />} />
-          <Route path="/quiz" element={<Quiz />} />
+          <Route path="/quiz/:playerName" element={<Quiz />} />
           <Route path="/wyniki" element={<Wyniki />} />
         </Routes>
       </div>
