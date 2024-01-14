@@ -2,7 +2,7 @@ import React from "react";
 import Question from "./reusable/Question.js";   
 import { BrowserRouter as Router, Routes, Route, Link, useParams } from 'react-router-dom';
 
-const lista = ["pierwsze", "drugie", "trzecie"];
+
 
 function Quiz() {
   const { playerName } = useParams();

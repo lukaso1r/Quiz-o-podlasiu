@@ -129,6 +129,7 @@ header{
 #playerNameQuiz{
   position: absolute;
   left: 5%;
+  top: 40%;
   font-size: 1.6vw;
 }
 
@@ -158,6 +159,8 @@ header{
   text-shadow: 3px 0px rgba(66, 68, 90, 1);
   margin: 0 0 2% 0;
   padding: 0;
+  width: 100%;
+  text-align: center;
 }
 
 img#questionImg {
