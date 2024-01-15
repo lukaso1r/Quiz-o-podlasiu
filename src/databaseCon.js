@@ -11,6 +11,10 @@ const databaseCon = {
 
   getAllResults: () =>axios.get(`${baseUrl}/wyniki`),
   createResult: (resultData) => axios.post(`${baseUrl}/wyniki`, resultData),
+  deleteResult: (id) => axios.delete(`${baseUrl}/wyniki/${id}`),
+  updateResult: (id, updatedResultData) => axios.put(`${baseUrl}/wyniki/${id}`, updatedResultData),
+
+
 };
 
 export default databaseCon;
