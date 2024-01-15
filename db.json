@@ -1,33 +1,57 @@
 {
   "wyniki": [
     {
-      "id": 1,
+      "id": "1",
       "nick": "Lukasz",
       "punkty": 446,
       "postac": "groupbober.svg"
     },
     {
-      "id": 2,
+      "id": "2",
       "nick": "Komar",
       "punkty": 400,
       "postac": "groupkon.svg"
     },
     {
-      "id": "2ba6",
-      "nick": "sdfsdf",
-      "punkty": 6,
-      "postac": "grouplis.svg"
+      "id": "0f4b",
+      "nick": "Adam",
+      "punkty": 7,
+      "postac": "grouprak.svg"
     },
     {
-      "id": "8eef",
-      "nick": "Zosia",
-      "punkty": 10,
-      "postac": "grouplis.svg"
+      "id": "f392",
+      "nick": "BArbarea",
+      "punkty": 3,
+      "postac": "groupptak.svg"
+    },
+    {
+      "id": "fea9",
+      "nick": "Kolega",
+      "punkty": 5,
+      "postac": "groupmysz.svg"
+    },
+    {
+      "id": "3059",
+      "nick": "Krowka",
+      "punkty": 1,
+      "postac": "groupkot.svg"
+    },
+    {
+      "id": "1926",
+      "nick": "asdsadasd",
+      "punkty": 7,
+      "postac": "groupkot.svg"
+    },
+    {
+      "id": "3855",
+      "nick": "sdfsdf",
+      "punkty": 3,
+      "postac": "groupkon.svg"
     }
   ],
   "questions": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Stolica Podlasia?",
       "correctAnswer": "Białystok",
       "answers": [
@@ -40,7 +64,7 @@
       "dateAdded": "2024-01-12"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Największe miasto województwa podlaskiego?",
       "correctAnswer": "Białystok",
       "answers": [
@@ -53,7 +77,7 @@
       "dateAdded": "2024-01-12"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Gdzie znajduje się Biebrzański Park Narodowy?",
       "correctAnswer": "Podlasie",
       "answers": [
@@ -66,7 +90,7 @@
       "dateAdded": "2024-01-12"
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Jaka rzeka przepływa przez Białystok?",
       "correctAnswer": "Narew",
       "answers": [
@@ -79,7 +103,7 @@
       "dateAdded": "2024-01-12"
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Które jezioro jest największe w województwie podlaskim?",
       "correctAnswer": "Siemianówka",
       "answers": [
@@ -92,7 +116,7 @@
       "dateAdded": "2024-01-12"
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "Jak nazywa się najstarszy park w Białymstoku?",
       "correctAnswer": "Park Zwierzyniecki",
       "answers": [
@@ -105,7 +129,7 @@
       "dateAdded": "2024-01-12"
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "Kto jest patronem Białegostoku?",
       "correctAnswer": "Jan Kiliński",
       "answers": [
@@ -118,7 +142,7 @@
       "dateAdded": "2024-01-12"
     },
     {
-      "id": 8,
+      "id": "8",
       "title": "Ile województw graniczy z województwem podlaskim?",
       "correctAnswer": "Cztery",
       "answers": [
@@ -131,7 +155,7 @@
       "dateAdded": "2024-01-12"
     },
     {
-      "id": 9,
+      "id": "9",
       "title": "W którym roku powstało województwo podlaskie?",
       "correctAnswer": "1999",
       "answers": [
@@ -144,7 +168,7 @@
       "dateAdded": "2024-01-12"
     },
     {
-      "id": 10,
+      "id": "10",
       "title": "Jaki zamek znajduje się w Hajnówce?",
       "correctAnswer": "Zamek w Drohiczynie",
       "answers": [

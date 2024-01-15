@@ -7,7 +7,6 @@ function Menu(){
 
     const handleStartButtonClick = () => {
         setShowUserName(true);
-        // Dodaj inne logiki, jeśli potrzebujesz
       };
 
     return (

@@ -6,7 +6,9 @@ import QuizEnd from "./reusable/quizEnd.js";
 
 function Quiz() {
   const { playerName } = useParams();
-
+  const {playerCharacter} = useParams();
+  const [dateStart, setDateStart] = useState(new Date());
+  const [dateEnd, setDateEnd] = useState(new Date());
   const [questions, setQuestions] = useState([]);
   const [quizStatus, setQuizStatus] = useState(0);
   const [playerPoints, setPlayerPoints] = useState(0);
@@ -33,11 +35,12 @@ function Quiz() {
         <div id="playerNameQuiz">
             <p>Gracz: <span id="playerNameAndPkt">{playerName}</span></p>
             <p>Punkty: <span id="playerNameAndPkt">{playerPoints}</span></p>
+            
         </div>
    
       <div id="quizQuestionContainer">
-        {quizStatus === 0 &&<Question setPlayerPoints={setPlayerPoints} questions={questions} setQuizStatus={setQuizStatus} quizStatus={quizStatus} />}
-        {quizStatus === 1 &&<QuizEnd playerName={playerName} setPlayerPoints={setPlayerPoints} playerPoints={playerPoints} setQuizStatus={setQuizStatus} quizStatus={quizStatus}/>}
+        {quizStatus === 0 &&<Question setPlayerPoints={setPlayerPoints} questions={questions} setQuizStatus={setQuizStatus} quizStatus={quizStatus} setDateEnd={setDateEnd} dateEnd={dateEnd} />}
+        {quizStatus === 1 &&<QuizEnd playerName={playerName} setPlayerPoints={setPlayerPoints} playerPoints={playerPoints} setQuizStatus={setQuizStatus} quizStatus={quizStatus} playerCharacter={playerCharacter} dateEnd={dateEnd} dateStart={dateStart}/>}
       </div>
     </div>
   );

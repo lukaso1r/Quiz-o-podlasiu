@@ -6,6 +6,7 @@ import Authors from './reusable/authors';
 import Quiz from './Quiz';
 import Header from "./reusable/header";
 import Wyniki from "./Wyniki";
+import YourComponent from './YourComponent';
 
 
 const App = () => {
@@ -15,8 +16,9 @@ const App = () => {
       <div>
         <Routes>
           <Route path="/" element={<Welcome />} />
-          <Route path="/quiz/:playerName" element={<Quiz />} />
+          <Route path="/quiz/:playerName/:playerCharacter" element={<Quiz />} />
           <Route path="/wyniki" element={<Wyniki />} />
+          <Route path="/test" element={<YourComponent />} />
         </Routes>
       </div>
       <Authors />

@@ -4,7 +4,7 @@ import databaseCon from "../databaseCon";
 
 const img = "pobrane.jpg"
 
-function Question({ setPlayerPoints, questions, setQuizStatus, quizStatus }) {
+function Question({ setPlayerPoints, questions, setQuizStatus, quizStatus, dateEnd, setDateEnd }) {
  
     var idList = [];
 
@@ -23,6 +23,7 @@ function Question({ setPlayerPoints, questions, setQuizStatus, quizStatus }) {
         if(id<questions.length-1){
             setId(++id);
         }else{
+            setDateEnd(new Date());
             setQuizStatus(1);
         }
     }

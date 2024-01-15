@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import databaseCon from "./databaseCon";
-import { BrowserRouter as Router, Routes, Route, Link, useParams } from 'react-router-dom';
 
 function Quiz(){
 
@@ -17,13 +16,17 @@ function Quiz(){
         };
       
         fetchData();
+        
       }, []);
+
+    const sortedResults = results.sort((a, b) => b.punkty - a.punkty).slice(0, 5);
+
 
     return (
         <div id="wynikiContainer">
             <h2>Tablica Wyników!</h2>
             <ul id="wynikiUl">
-                {results.map((result) => (
+                {sortedResults.map((result) => (
                     <li key={result.id}>
                         <div>
                             <img src={`http://localhost:3000/img/postacie/${result.postac}`} alt={`${result.postac}`}/>

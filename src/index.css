@@ -372,3 +372,72 @@ li div{
   text-shadow: none;
   background-color: #193b4b!important;
 }
+
+.image_picker_image {
+  max-width: 14px;
+  max-height: 10px;
+  width: 10px;
+}
+
+#userNameInputContainer{
+  display: flex!important;
+  flex-direction: row!important;
+  flex-wrap: wrap!important;
+  justify-content: center!important;
+  align-items: center!important;
+  width: 60%;
+}
+
+
+
+.image_picker {
+  width: 100%;
+  display: flex!important;
+  flex-direction: row!important;
+  flex-wrap: wrap!important;
+  justify-content: center!important;
+  align-items: center!important;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.responsive {
+  width: 12%;
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+img.thumbnail {
+  width: 100%!important;
+  height: auto!important;
+}
+.image_picker .responsive{
+  margin: 0!important;
+}
+
+.image_picker .responsive .thumbnail{
+  padding: 0;
+  border: none!important;
+}
+
+#saveResultBtn{
+  background-color: transparent;
+  color:#193b4b;
+  font-size: 1.5vw;
+  padding: 2% 3%;
+  font-family: 'Marhey', sans-serif;
+  /* text-shadow: 3px -2px rgba(66, 68, 90, 1); */
+  border: dotted 3px black;
+  border-radius: 25px;
+}
+
+#saveResultBtn:hover{
+  background-color:#31708e;
+  color:white;
+  border: dotted 3px white;
+}

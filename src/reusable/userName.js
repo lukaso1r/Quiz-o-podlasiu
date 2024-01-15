@@ -1,41 +1,70 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
+import ImagePicker from "react-image-picker";
+import "react-image-picker/dist/index.css";
+
+
+const imageList = [
+  { src: 'http://localhost:3000/img/postacie/groupbober.svg', value: 'groupbober.svg' },
+  { src: 'http://localhost:3000/img/postacie/groupdzik.svg', value: 'groupbober.svg' },
+  { src: 'http://localhost:3000/img/postacie/groupkon.svg', value: 'groupbober.svg' },
+  { src: 'http://localhost:3000/img/postacie/groupkot.svg', value: 'groupbober.svg' },
+  { src: 'http://localhost:3000/img/postacie/groupkrowa.svg', value: 'groupbober.svg' },
+  { src: 'http://localhost:3000/img/postacie/groupkura.svg', value: 'groupbober.svg' },
+  { src: 'http://localhost:3000/img/postacie/grouplis.svg', value: 'groupbober.svg' },
+  { src: 'http://localhost:3000/img/postacie/groupmysz.svg', value: 'groupbober.svg' },
+  { src: 'http://localhost:3000/img/postacie/groupptak.svg', value: 'groupbober.svg' },
+  { src: 'http://localhost:3000/img/postacie/grouprak.svg', value: 'groupbober.svg' },
+  { src: 'http://localhost:3000/img/postacie/groupfreddy.svg', value: 'groupbober.svg' },
+];
 
 function UserName() {
-  const [inputValue, setInputValue] = useState('');
 
+  const [inputValue, setInputValue] = useState('');
+  const [selectedImages, setSelectedImages] = useState([]);
+  const [character, setCharacter] = useState("");
+  
   const handleStartUserBtnClick = () => {
-    if (inputValue.trim() !== '') {
-      const link = `/quiz/${encodeURIComponent(inputValue)}`;
+    const dateStart = new Date();
+    if (inputValue.trim() !== '' && character.trim() !== '') {
+      const link = `/quiz/${encodeURIComponent(inputValue)}/${encodeURIComponent(character)}`;
       window.location.href = link;
     } else {
       alert('Podaj swoje imię przed rozpoczęciem quizu!');
     }
   };
 
+  const handleImageSelect = (selected) => {
+    setSelectedImages(selected);
+  };
+
+  useEffect(() => {
+    if (selectedImages && selectedImages.src) {
+        const imageName = selectedImages.src.split('/').pop();
+        console.log(imageName);
+        setCharacter(imageName);
+    }
+}, [selectedImages]);
+
   return (
     <div id="userName">
       <div id="userNameInputContainer">
+        <input
+          id="userNameInput"
+          type="text"
+          placeholder="Podaj swoje imię i wybierz postać"
+          value={inputValue}
+          onChange={(e) => setInputValue(e.target.value)}
+        />
         
-        <input id="userNameInput" type="text" placeholder="Podaj swoje imię" 
-        value={inputValue} onChange={(e) => setInputValue(e.target.value)}/>
-
-        <select class="image-picker show-html">
-          <option data-img-src="img/01.png" data-img-class="first" data-img-alt="Page 1" value="1">  Page 1  </option>
-          <option data-img-src="img/02.png" data-img-alt="Page 2" value="2">  Page 2  </option>
-          <option data-img-src="img/03.png" data-img-alt="Page 3" value="3">  Page 3  </option>
-          <option data-img-src="img/04.png" data-img-alt="Page 4" value="4">  Page 4  </option>
-          <option data-img-src="img/05.png" data-img-alt="Page 5" value="5">  Page 5  </option>
-          <option data-img-src="img/06.png" data-img-alt="Page 6" value="6">  Page 6  </option>
-          <option data-img-src="img/07.png" data-img-alt="Page 7" value="7">  Page 7  </option>
-          <option data-img-src="img/08.png" data-img-alt="Page 8" value="8">  Page 8  </option>
-          <option data-img-src="img/09.png" data-img-alt="Page 9" value="9">  Page 9  </option>
-          <option data-img-src="img/10.png" data-img-alt="Page 10" value="10"> Page 10 </option>
-          <option data-img-src="img/11.png" data-img-alt="Page 11" value="11"> Page 11 </option>
-          <option data-img-src="img/12.png" data-img-alt="Page 12" data-img-class="last" value="12"> Page 12 </option>
-        </select>
-
-        <button id="startUserBtn" onClick={handleStartUserBtnClick}>Rozpocznij!</button>
+        
+       <ImagePicker 
+          images={imageList.map((image, index) => ({ src: image.src, value: index }))}
+          onPick={handleImageSelect}
+      />
+        <button id="startUserBtn" onClick={handleStartUserBtnClick}>
+          Rozpocznij!
+        </button>
       </div>
     </div>
   );
