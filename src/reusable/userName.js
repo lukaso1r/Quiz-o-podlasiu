@@ -25,12 +25,11 @@ function UserName() {
   const [character, setCharacter] = useState("");
   
   const handleStartUserBtnClick = () => {
-    const dateStart = new Date();
     if (inputValue.trim() !== '' && character.trim() !== '') {
       const link = `/quiz/${encodeURIComponent(inputValue)}/${encodeURIComponent(character)}`;
       window.location.href = link;
     } else {
-      alert('Podaj swoje imię przed rozpoczęciem quizu!');
+      alert('Podaj swoje imię i wybierz maskotkę przed rozpoczęciem quizu!');
     }
   };
 

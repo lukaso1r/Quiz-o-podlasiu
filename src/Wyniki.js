@@ -58,7 +58,7 @@ function Quiz() {
     }
   
     console.log("Zapisano edytowane dane:", editedResult);
-    setEditedResult(null); // Zakończ edycję po zapisaniu
+    setEditedResult(null); 
   };
 
   
@@ -80,8 +80,8 @@ function Quiz() {
                 <>
                   <p>{result.nick}</p>
                   {showOption===true && <div id="invisible">
-                    <button onClick={() => handleDeleteButtonClick(result.id)} id="optionButtonSmall"><span class="material-symbols-outlined">delete</span></button>
-                    <button onClick={() => handleEditButtonClick(result.id, result.nick, result.punkty, result.postac)} id="optionButtonSmall"><span class="material-symbols-outlined">edit</span></button>
+                    <button onClick={() => handleDeleteButtonClick(result.id)} id="optionButtonSmall"><span className="material-symbols-outlined">delete</span></button>
+                    <button onClick={() => handleEditButtonClick(result.id, result.nick, result.punkty, result.postac)} id="optionButtonSmall"><span className="material-symbols-outlined">edit</span></button>
                   </div>}
                 </>
               )}

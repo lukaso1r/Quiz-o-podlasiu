@@ -26,7 +26,7 @@ a{
 }
 
 header{
-  background-color: rgb(253, 247, 247);
+  background-color: white;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -172,7 +172,29 @@ header{
 
 img#questionImg {
   margin: 5% auto 1% auto;
-  width: 60%;
+  width: 50rem;
+  max-height: 30rem;
+}
+
+@media (max-width: 1540px) {
+  img#questionImg {
+    margin: 5% auto 1% auto;
+    width: 50rem;
+    max-height: 400px;
+  }
+
+  #wynikiUl{
+    font-size: 2vw!important;
+  }
+
+  #wynikiContainer h2{
+    font-size: 2vw!important;
+  }
+  li img{
+    width: 3.5rem!important;
+    margin-right: 1rem!important;
+  }
+
 }
 
 #answers{
@@ -340,6 +362,15 @@ li div{
   padding: 0;
 }
 
+#quizEndH5{
+  font-size: 1.4vw;
+  color: #31708E;
+  text-shadow: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
 #QuizEndContainer {
   position: absolute;
   top: 50%;
@@ -434,6 +465,13 @@ img.thumbnail {
   /* text-shadow: 3px -2px rgba(66, 68, 90, 1); */
   border: dotted 3px black;
   border-radius: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.material-symbols-outlined {
+  font-size: 2rem!important;
+  font-weight: 500!important;
 }
 
 #saveResultBtn:hover{

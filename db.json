@@ -1,22 +1,34 @@
 {
   "wyniki": [
     {
-      "id": "1",
-      "nick": "Lukasz",
-      "punkty": 446,
-      "postac": "groupbober.svg"
+      "id": "3db9",
+      "nick": "Zosia",
+      "punkty": 378,
+      "postac": "groupkot.svg"
     },
     {
-      "id": "2",
-      "nick": "Lukaszasdasdsad",
-      "punkty": 400,
-      "postac": "groupkon.svg"
+      "id": "b207",
+      "nick": "AkA",
+      "punkty": 380,
+      "postac": "groupmysz.svg"
     },
     {
-      "id": "0f4b",
-      "nick": "karol",
-      "punkty": 7,
+      "id": "f102",
+      "nick": "Komar",
+      "punkty": 196,
       "postac": "grouprak.svg"
+    },
+    {
+      "id": "e832",
+      "nick": "Test",
+      "punkty": 79,
+      "postac": "groupkot.svg"
+    },
+    {
+      "id": "b1f1",
+      "nick": "gfdgsfdgsfg",
+      "punkty": 139,
+      "postac": "groupkot.svg"
     }
   ],
   "questions": [
@@ -25,103 +37,103 @@
       "title": "Stolica Podlasia?",
       "correctAnswer": "Białystok",
       "answers": [
-        "Lublin",
-        "Warszawa",
-        "Kraków",
+        "Łomża",
+        "Hajnówka",
+        "Suwałki",
         "Białystok"
       ],
-      "imageLink": "",
+      "imageLink": "drogowskaz.jpg",
       "dateAdded": "2024-01-12"
     },
     {
       "id": "2",
-      "title": "Największe miasto województwa podlaskiego?",
-      "correctAnswer": "Białystok",
+      "title": "Gdzie odbywa się cyklicznie Dzień Ogórka?",
+      "correctAnswer": "Kruszewo",
       "answers": [
-        "Suwałki",
-        "Łomża",
-        "Zambrów",
-        "Białystok"
+        "Ogórki",
+        "Kruszewo",
+        "Zielone",
+        "Mońki"
       ],
-      "imageLink": "",
+      "imageLink": "ogorek.jpg",
       "dateAdded": "2024-01-12"
     },
     {
       "id": "3",
-      "title": "Gdzie znajduje się Biebrzański Park Narodowy?",
-      "correctAnswer": "Podlasie",
+      "title": "Który park narodowy znajduje się na Podlasiu?",
+      "correctAnswer": "Wigierski Park Narodowy",
       "answers": [
-        "Mazury",
-        "Pomorze",
-        "Śląsk",
-        "Podlasie"
+        "Wigierski Park Narodowy",
+        "Nadbużański Park Krajobrazowy",
+        "Brudzeński Park Krajobrazowy",
+        "Poleski Park Narodowy"
       ],
-      "imageLink": "",
+      "imageLink": "parki.jpg",
       "dateAdded": "2024-01-12"
     },
     {
       "id": "4",
       "title": "Jaka rzeka przepływa przez Białystok?",
-      "correctAnswer": "Narew",
+      "correctAnswer": "Białka",
       "answers": [
         "Wisła",
-        "Bug",
-        "Warta",
+        "Łyna",
+        "Białka",
         "Narew"
       ],
-      "imageLink": "",
+      "imageLink": "narew.jpg",
       "dateAdded": "2024-01-12"
     },
     {
       "id": "5",
       "title": "Które jezioro jest największe w województwie podlaskim?",
-      "correctAnswer": "Siemianówka",
+      "correctAnswer": "Wigry",
       "answers": [
-        "Łebsko",
+        "Serwy",
         "Mamry",
         "Jeziorak",
-        "Siemianówka"
+        "Wigry"
       ],
-      "imageLink": "",
+      "imageLink": "wigry.jpg",
       "dateAdded": "2024-01-12"
     },
     {
       "id": "6",
       "title": "Jak nazywa się najstarszy park w Białymstoku?",
-      "correctAnswer": "Park Zwierzyniecki",
+      "correctAnswer": "Park Stary",
       "answers": [
         "Park Branicki",
-        "Park Antoniuk",
+        "Park Stary",
         "Park Planty",
         "Park Zwierzyniecki"
       ],
-      "imageLink": "",
+      "imageLink": "stary.jpg",
       "dateAdded": "2024-01-12"
     },
     {
       "id": "7",
       "title": "Kto jest patronem Białegostoku?",
-      "correctAnswer": "Jan Kiliński",
+      "correctAnswer": "Michał Sopoćko",
       "answers": [
         "Tadeusz Kościuszko",
-        "Józef Piłsudski",
+        "Michał Sopoćko",
         "Władysław Sikorski",
         "Jan Kiliński"
       ],
-      "imageLink": "",
+      "imageLink": "sopocko.jpg",
       "dateAdded": "2024-01-12"
     },
     {
       "id": "8",
       "title": "Ile województw graniczy z województwem podlaskim?",
-      "correctAnswer": "Cztery",
+      "correctAnswer": "Trzy",
       "answers": [
         "Trzy",
         "Pięć",
         "Sześć",
         "Cztery"
       ],
-      "imageLink": "",
+      "imageLink": "ileW.jpg",
       "dateAdded": "2024-01-12"
     },
     {
@@ -129,26 +141,169 @@
       "title": "W którym roku powstało województwo podlaskie?",
       "correctAnswer": "1999",
       "answers": [
-        "1989",
-        "2004",
-        "2010",
+        "1918",
+        "1758",
+        "1873",
         "1999"
       ],
-      "imageLink": "",
+      "imageLink": "kiedy.jpg",
       "dateAdded": "2024-01-12"
     },
     {
       "id": "10",
-      "title": "Jaki zamek znajduje się w Hajnówce?",
-      "correctAnswer": "Zamek w Drohiczynie",
+      "title": "Jaki zamek w Podlaskim jest największy?",
+      "correctAnswer": "Zamek w Tykocinie",
       "answers": [
         "Zamek w Białowieży",
         "Zamek w Janowie Podlaskim",
-        "Zamek w Ciechanowcu",
+        "Zamek w Tykocinie",
         "Zamek w Drohiczynie"
       ],
-      "imageLink": "",
+      "imageLink": "zamek.jpg",
       "dateAdded": "2024-01-12"
+    },
+    {
+      "id": "11",
+      "title": "Który festiwal odbywa się co roku w Augustowie?",
+      "correctAnswer": "Festiwal ryb słodkowodnych",
+      "answers": [
+        "Woodstock",
+        "Festiwal Pszczelarzy",
+        "Festiwal ryb słodkowodnych",
+        "Festiwal Jazzowy"
+      ],
+      "imageLink": "festiwal.jpg",
+      "dateAdded": "2024-01-13"
+    },
+    {
+      "id": "12",
+      "title": "W jakiej miejscowości znajduje się ten most z 1912r. ",
+      "correctAnswer": "w Stańczykach",
+      "answers": [
+        "w Stańczykach",
+        "w Przerośli",
+        "w Jeleniewie",
+        "w Rospudzie"
+      ],
+      "imageLink": "most.jpg",
+      "dateAdded": "2024-01-13"
+    },
+    {
+      "id": "13",
+      "title": "Kwiaty którego warzywa można podziwiać w herbie Moniek?",
+      "correctAnswer": "Ziemniaka",
+      "answers": [
+        "Ziemniaka",
+        "Dyni",
+        "Maku",
+        "Pszenicy"
+      ],
+      "imageLink": "monki.jpeg",
+      "dateAdded": "2024-01-13"
+    },
+    {
+      "id": "14",
+      "title": "Gdzie znajduje się jedyne w regionie muzeum mleka?",
+      "correctAnswer": "Grajewo",
+      "answers": [
+        "Grajewo",
+        "Wysokiem Mazowieckiem",
+        "Zambrowie",
+        "Łomża"
+      ],
+      "imageLink": "mliko.jpg",
+      "dateAdded": "2024-01-13"
+    },
+    {
+      "id": "15",
+      "title": "Które jezioro w Podlaskiem jest najgłębsze?",
+      "correctAnswer": "Hańcza",
+      "answers": [
+        "Siemianówka",
+        "Nielisz",
+        "Jezioro Wigry",
+        "Hańcza"
+      ],
+      "imageLink": "hancza.jpeg",
+      "dateAdded": "2024-01-13"
+    },
+    {
+      "id": "16",
+      "title": "W którym roku Białystok uzyskał oficjalnie prawa miejskie?",
+      "correctAnswer": "1749",
+      "answers": [
+        "1523",
+        "1692",
+        "1749",
+        "1809"
+      ],
+      "imageLink": "bbstok.jpg",
+      "dateAdded": "2024-01-13"
+    },
+    {
+      "id": "17",
+      "title": "Kto jest autorem projektu Pałacu Branickiego w Białymstoku?",
+      "correctAnswer": "Tylman z Gameren",
+      "answers": [
+        "Tylmana z Gameren",
+        "Andrzej Le Brun",
+        "Bronisław Chromy",
+        "Henryk Kuna"
+      ],
+      "imageLink": "palac.jpg",
+      "dateAdded": "2024-01-13"
+    },
+    {
+      "id": "18",
+      "title": "W której gminie ponad 75% mieszkańców deklaruje narodowość litewską?",
+      "correctAnswer": "Puńsk",
+      "answers": [
+        "Puńsk",
+        "Krasnopol",
+        "Choroszcz",
+        "Giby"
+      ],
+      "imageLink": "pp.jpg",
+      "dateAdded": "2024-01-13"
+    },
+    {
+      "id": "19",
+      "title": "Geograficzny środek Europy znajduje się w?",
+      "correctAnswer": "Suchowoli",
+      "answers": [
+        "Suchowoli",
+        "Korycin",
+        "Jedwabne",
+        "Szczuczyn"
+      ],
+      "imageLink": "sucho.jpg",
+      "dateAdded": "2024-01-13"
+    },
+    {
+      "id": "20",
+      "title": "Ile zapłacimy za przejazd autostradą w woj. podlaskim?",
+      "correctAnswer": "Nic",
+      "answers": [
+        "100zł",
+        "20zł",
+        "Nic",
+        "14.99zł"
+      ],
+      "imageLink": "auto.jpg",
+      "dateAdded": "2024-01-13"
+    },
+    {
+      "id": "21",
+      "title": "Która maskotka reprezentuje podlaską policję?",
+      "correctAnswer": "Miś Dobromiś",
+      "answers": [
+        "Miś Dobromiś",
+        "Miś Policjant",
+        "Miś Sierżant Poli",
+        "Sierżant Bóbr"
+      ],
+      "imageLink": "policjant.png",
+      "dateAdded": "2024-01-13"
     }
   ]
 }

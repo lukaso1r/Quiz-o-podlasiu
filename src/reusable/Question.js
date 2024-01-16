@@ -2,12 +2,10 @@ import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import databaseCon from "../databaseCon";
 
-const img = "pobrane.jpg"
 
 function Question({ setPlayerPoints, questions, setQuizStatus, quizStatus, dateEnd, setDateEnd }) {
  
     var idList = [];
-
     var [id, setId] = useState(0);
     
     const handleAnswerClick = () => {
@@ -23,7 +21,7 @@ function Question({ setPlayerPoints, questions, setQuizStatus, quizStatus, dateE
         if(id<questions.length-1){
             setId(++id);
         }else{
-            setDateEnd(new Date());
+            setDateEnd(new Date().getTime());
             setQuizStatus(1);
         }
     }
@@ -49,7 +47,7 @@ function Question({ setPlayerPoints, questions, setQuizStatus, quizStatus, dateE
                 </span> 
                 {questions.length > id && questions[id] ? questions[id].title : ""}
             </h2>
-            <img id="questionImg" src={`http://localhost:3000/img/${img}`} alt="test" />
+            <img id="questionImg" src={`http://localhost:3000/img/${questions.length > id && questions[id] ? questions[id].imageLink : ""}`} alt="test" />
             <div id="answers">
                 <div id="aOne" onClick={() => userAnswer(questions.length > id && questions[id] ? questions[id].answers[idList[0]] : "")}>
                     {questions.length > id && questions[id] ? questions[id].answers[idList[0]] : ""}
