@@ -37,6 +37,9 @@ function Quiz() {
 
   const handleSaveButtonClick = async () => {
     try {
+
+      if(validateString(editedResult.nick)){
+
       const updatedResult = {
         id: editedResult.id,
         nick: editedResult.nick,
@@ -53,12 +56,24 @@ function Quiz() {
         )
       );
       setshowOption(false);
+    }else{
+      return;
+    }
     } catch (error) {
       console.error("Błąd podczas edytowania nicku", error);
     }
   
     console.log("Zapisano edytowane dane:", editedResult);
     setEditedResult(null); 
+  };
+
+  const validateString = (value) => {
+    const regex = /^[A-ZĄĆĘŁŃÓŚŹŻ][a-ząćęłńóśźż]{0,199}$/;
+    if (!regex.test(value)) {
+      alert(`Błąd walidacji: Nick ${value} powinień być typu String, Capitalized Case, zakres 1-200 znaków.`);
+      return false;
+    }
+    return true;
   };
 
   

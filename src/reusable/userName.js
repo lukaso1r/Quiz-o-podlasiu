@@ -25,7 +25,7 @@ function UserName() {
   const [character, setCharacter] = useState("");
   
   const handleStartUserBtnClick = () => {
-    if (inputValue.trim() !== '' && character.trim() !== '') {
+    if (inputValue.trim() !== '' && character.trim() !== '' && validateString(inputValue)) {
       const link = `/quiz/${encodeURIComponent(inputValue)}/${encodeURIComponent(character)}`;
       window.location.href = link;
     } else {
@@ -35,6 +35,15 @@ function UserName() {
 
   const handleImageSelect = (selected) => {
     setSelectedImages(selected);
+  };
+
+  const validateString = (value) => {
+    const regex = /^[A-ZĄĆĘŁŃÓŚŹŻ][a-ząćęłńóśźż]{0,199}$/;
+    if (!regex.test(value)) {
+      alert(`Błąd walidacji: Nick ${value} powinień być typu String, Capitalized Case, zakres 1-200 znaków.`);
+      return false;
+    }
+    return true;
   };
 
   useEffect(() => {

@@ -8,7 +8,7 @@
     },
     {
       "id": "b207",
-      "nick": "AKAAAA",
+      "nick": "Poprawione",
       "punkty": 380,
       "postac": "groupmysz.svg"
     },
@@ -300,7 +300,7 @@
       "dateAdded": "17.01.2024"
     },
     {
-      "id": 22,
+      "id": "22",
       "title": "Testowe",
       "correctAnswer": "Testowe",
       "answers": [
@@ -313,7 +313,7 @@
       "data": "17.01.2024"
     },
     {
-      "id": 23,
+      "id": "23",
       "title": "Hej",
       "correctAnswer": "Hej",
       "answers": [
@@ -326,7 +326,7 @@
       "date": "17.01.2024"
     },
     {
-      "id": 24,
+      "id": "24",
       "title": "Hej",
       "correctAnswer": "Hej",
       "answers": [
