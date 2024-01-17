@@ -11,9 +11,6 @@ class Questionobj {
     this.date = date;
   }
 
-  introduce() {
-    console.log(`Hello, my id is ${this.id}, my title is ${this.title}, my correctAnswer is ${this.correctAnswer}, my answers are ${this.answers.join(", ")}, my image link is ${this.imageLink}, and my date is: ${this.date}`);
-  }
 }
 
 function Admin() {
@@ -55,7 +52,7 @@ function Admin() {
   const validateString = (value, fieldName) => {
     const regex = /^[A-ZĄĆĘŁŃÓŚŹŻ][a-ząćęłńóśźż]{0,199}$/;
     if (!regex.test(value)) {
-      console.error(`Błąd walidacji: Pole ${fieldName} powinno być typu String, Capitalized Case, zakres 1-200 znaków.`);
+      alert(`Błąd walidacji: Pole ${fieldName} powinno być typu String, Capitalized Case, zakres 1-200 znaków.`);
       return false;
     }
     return true;
@@ -66,7 +63,7 @@ function Admin() {
     const selectedDate = new Date(value);
     
     if (selectedDate < currentDate && selectedDate instanceof Date) {
-      console.error(`Błąd walidacji: Pole ${fieldName} powinno być poprawną datą, a data nie może być wcześniejsza niż obecny dzień.`,selectedDate, currentDate );
+        alert(`Błąd walidacji: Pole ${fieldName} powinno być poprawną datą, a data nie może być wcześniejsza niż obecny dzień.`,selectedDate, currentDate );
       return false;
     }
     return true;
@@ -107,7 +104,7 @@ function Admin() {
       !formData.np3 ||
       !formData.image
     ) {
-      console.error('Wszystkie pola są wymagane!');
+        alert('Wszystkie pola są wymagane!');
       return;
     }
 
@@ -122,8 +119,7 @@ function Admin() {
 
     );
 
-    // Wyślij do konsoli
-    newQuestion.introduce();
+    
     const addQ = await databaseCon.createQuestion(newQuestion);
   };
 
