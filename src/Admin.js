@@ -2,21 +2,21 @@ import React, { useState, useEffect } from "react";
 import databaseCon from "./databaseCon.js";
 
 class Questionobj {
-  constructor(id, title, correctAnswer, answers, imageLink) {
+  constructor(id, title, correctAnswer, answers, imageLink, date) {
     this.id = id;
     this.title = title;
     this.correctAnswer = correctAnswer;
     this.answers = answers;
     this.imageLink = imageLink;
+    this.date = date;
   }
 
   introduce() {
-    console.log(`Hello, my id is ${this.id}, my title is ${this.title}, my correctAnswer is ${this.correctAnswer}, my answers are ${this.answers.join(", ")}, and my image link is ${this.imageLink}`);
+    console.log(`Hello, my id is ${this.id}, my title is ${this.title}, my correctAnswer is ${this.correctAnswer}, my answers are ${this.answers.join(", ")}, my image link is ${this.imageLink}, and my date is: ${this.date}`);
   }
 }
 
 function Admin() {
-  const [questionObjInstance, setQuestionObjInstance] = useState(new Questionobj(100, "gdzie bobr", "tam", [], ""));
   const [questions, setQuestions] = useState([]);
 
   useEffect(() => {
@@ -24,7 +24,6 @@ function Admin() {
       try {
         const response = await databaseCon.getAllQuestions();
         setQuestions(response.data);
-        console.log(questions);
       } catch (error) {
         console.error("Błąd pobierania pytań z bazy danych:", error);
       }
@@ -34,13 +33,14 @@ function Admin() {
   }, []);
 
   const [formData, setFormData] = useState({
-    id: questions.length + 1,
+    id: '',
     title: '',
     correctAnswer: '',
     np1: '',
     np2: '',
     np3: '',
     image: null,
+    date: new Date().toLocaleDateString(),
   });
 
   const handleInputChange = (event) => {
@@ -52,20 +52,41 @@ function Admin() {
     }));
   };
 
-  const handleSubmit = (event) => {
+  const validateString = (value, fieldName) => {
+    const regex = /^[A-ZĄĆĘŁŃÓŚŹŻ][a-ząćęłńóśźż]{0,199}$/;
+    if (!regex.test(value)) {
+      console.error(`Błąd walidacji: Pole ${fieldName} powinno być typu String, Capitalized Case, zakres 1-200 znaków.`);
+      return false;
+    }
+    return true;
+  };
+
+  const validateDate = (value, fieldName) => {
+    const currentDate = new Date().toLocaleDateString();
+    const selectedDate = new Date(value);
+    
+    if (selectedDate < currentDate && selectedDate instanceof Date) {
+      console.error(`Błąd walidacji: Pole ${fieldName} powinno być poprawną datą, a data nie może być wcześniejsza niż obecny dzień.`,selectedDate, currentDate );
+      return false;
+    }
+    return true;
+  };
+
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
     // Walidacja title i correctAnswer
-    const isTitleValid = /^[A-ZĄĆĘŁŃÓŚŹŻ][a-ząćęłńóśźż]*$/.test(formData.title);
-    const isCorrectAnswerValid = /^[A-ZĄĆĘŁŃÓŚŹŻ][a-ząćęłńóśźż]*$/.test(formData.correctAnswer);
-
-    if (!isTitleValid) {
-      console.error('Błąd walidacji: Tytuł powinien być w formie Capitalized Case.');
+    if (!validateString(formData.title, 'title') || !validateString(formData.correctAnswer, 'correctAnswer')) {
       return;
     }
 
-    if (!isCorrectAnswerValid) {
-      console.error('Błąd walidacji: Poprawna odpowiedź powinna być w formie Capitalized Case.');
+    // Walidacja np1, np2, np3
+    if (!validateString(formData.np1, 'np1') || !validateString(formData.np2, 'np2') || !validateString(formData.np3, 'np3')) {
+      return;
+    }
+
+    // Walidacja daty
+    if (!validateDate(formData.date, 'date')) {
       return;
     }
 
@@ -96,19 +117,23 @@ function Admin() {
       formData.title,
       formData.correctAnswer,
       answersArray,
-      formData.image.name
+      formData.image.name,
+      formData.date
+
     );
 
     // Wyślij do konsoli
     newQuestion.introduce();
+    const addQ = await databaseCon.createQuestion(newQuestion);
   };
 
   return (
-    <>
-      <div>Hej</div>
+    <div id="adminPanel">
+      <div>Formularz dodawania pytania</div>
       <form onSubmit={handleSubmit}>
         <label>
           Tytuł:
+          <br/>
           <input
             type="text"
             name="title"
@@ -117,9 +142,9 @@ function Admin() {
             required
           />
         </label>
-        <br />
         <label>
           Poprawna odpowiedź:
+          <br/>
           <input
             type="text"
             name="correctAnswer"
@@ -128,9 +153,9 @@ function Admin() {
             required
           />
         </label>
-        <br />
         <label>
-          np1:
+        Nieoprawna odpowiedź 1:
+          <br/>
           <input
             type="text"
             name="np1"
@@ -139,9 +164,9 @@ function Admin() {
             required
           />
         </label>
-        <br />
         <label>
-          np2:
+        Nieoprawna odpowiedź 2:
+          <br/>
           <input
             type="text"
             name="np2"
@@ -150,9 +175,9 @@ function Admin() {
             required
           />
         </label>
-        <br />
         <label>
-          np3:
+        Nieoprawna odpowiedź 3:
+          <br/>
           <input
             type="text"
             name="np3"
@@ -161,9 +186,9 @@ function Admin() {
             required
           />
         </label>
-        <br />
         <label>
           Zdjęcie:
+          
           <input
             type="file"
             name="image"
@@ -172,10 +197,9 @@ function Admin() {
             required
           />
         </label>
-        <br />
-        <button type="submit">Wyślij</button>
+        <button id="statsBtn" className="addQ" type="submit">Dodaj</button>
       </form>
-    </>
+    </div>
   );
 }
 

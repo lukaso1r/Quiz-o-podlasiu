@@ -517,3 +517,58 @@ img.thumbnail {
   border: 3px solid white;
   border-radius: 6px;
 }
+
+#adminPanel{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  margin: 2vw auto;
+  padding: 0;
+  width: 80;
+  color: white;
+  text-shadow: 1px 0px rgba(66, 68, 90, 1);
+  font-size: 2vw;
+}
+
+#adminPanel form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  margin: 0;
+  padding: 1% 0;
+  width: 50%;
+  background: #193b4bb9;
+  border-radius: 10px;
+
+}
+
+#adminPanel label{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  margin: 5px 0; 
+  padding: 0;
+  width: 100%;
+  color: white;
+  text-shadow: 1px 0px rgba(66, 68, 90, 1);
+  font-size: 1.3vw;
+
+}
+
+#adminPanel input{
+  padding: 5px;
+  border-radius: 10px;
+  background: #b9e4f89a;
+  font-size: 1vw;
+  width: 90%;
+}
+
+.addQ{
+  padding: 0!important;
+}
