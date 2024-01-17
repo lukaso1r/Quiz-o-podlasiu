@@ -7,6 +7,7 @@ import Quiz from './Quiz';
 import Header from "./reusable/header";
 import Wyniki from "./Wyniki";
 import YourComponent from './YourComponent';
+import Admin from './Admin';
 
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/quiz/:playerName/:playerCharacter" element={<Quiz />} />
           <Route path="/wyniki" element={<Wyniki />} />
           <Route path="/test" element={<YourComponent />} />
+          <Route path="/admin" element={<Admin />} />
         </Routes>
       </div>
       <Authors />

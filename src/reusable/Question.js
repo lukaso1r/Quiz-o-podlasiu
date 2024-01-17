@@ -12,8 +12,6 @@ function Question({ setPlayerPoints, questions, setQuizStatus, quizStatus, dateE
         setPlayerPoints((prevPoints) => prevPoints + 1);
     };
 
-
-
     function userAnswer(q){
         if(q===questions[id].correctAnswer){
             handleAnswerClick();

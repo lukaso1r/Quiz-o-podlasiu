@@ -26,9 +26,6 @@ function Quiz() {
     fetchData();
   }, []);
 
-  function test(){
-    console.log(quizStatus);
-  }
 
   return (
     <div id="quiz">
