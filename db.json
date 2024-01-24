@@ -7,12 +7,6 @@
       "postac": "groupkot.svg"
     },
     {
-      "id": "b207",
-      "nick": "Poprawione",
-      "punkty": 380,
-      "postac": "groupmysz.svg"
-    },
-    {
       "id": "f102",
       "nick": "Komar",
       "punkty": 196,
@@ -23,6 +17,30 @@
       "nick": "Kuba",
       "punkty": 225,
       "postac": "grouplis.svg"
+    },
+    {
+      "id": "3c88",
+      "nick": "Zuzanna",
+      "punkty": 271,
+      "postac": "grouplis.svg"
+    },
+    {
+      "id": "6dfc",
+      "nick": "Kasper",
+      "punkty": 206,
+      "postac": "grouprak.svg"
+    },
+    {
+      "id": "1629",
+      "nick": "Bui",
+      "punkty": 183,
+      "postac": "grouplis.svg"
+    },
+    {
+      "id": "de7c",
+      "nick": "Iza",
+      "punkty": 170,
+      "postac": "groupkon.svg"
     }
   ],
   "questions": [
@@ -289,54 +307,15 @@
     {
       "id": "21",
       "title": "Która maskotka reprezentuje podlaską policję?",
-      "correctAnswer": "Miś Dobromiś",
+      "correctAnswer": "Komisarz Żubrewicz",
       "answers": [
-        "Miś Dobromiś",
+        "Komisarz Żubrewicz",
         "Miś Policjant",
         "Miś Sierżant Poli",
         "Sierżant Bóbr"
       ],
       "imageLink": "policjant.png",
       "dateAdded": "17.01.2024"
-    },
-    {
-      "id": "22",
-      "title": "Testowe",
-      "correctAnswer": "Testowe",
-      "answers": [
-        "Testowe",
-        "Testowe1",
-        "Testowe2",
-        "Testowe3"
-      ],
-      "imageLink": "drogowskaz.jpg",
-      "data": "17.01.2024"
-    },
-    {
-      "id": "23",
-      "title": "Hej",
-      "correctAnswer": "Hej",
-      "answers": [
-        "Hej",
-        "Hej",
-        "Hej",
-        "Hej"
-      ],
-      "imageLink": "stary.jpg",
-      "date": "17.01.2024"
-    },
-    {
-      "id": "24",
-      "title": "Hej",
-      "correctAnswer": "Hej",
-      "answers": [
-        "Hej",
-        "Hej",
-        "Hej",
-        "Hej"
-      ],
-      "imageLink": "stary.jpg",
-      "date": "17.01.2024"
     }
   ]
 }

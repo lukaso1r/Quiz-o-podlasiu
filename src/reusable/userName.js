@@ -28,6 +28,7 @@ function UserName() {
     if (inputValue.trim() !== '' && character.trim() !== '' && validateString(inputValue)) {
       const link = `/quiz/${encodeURIComponent(inputValue)}/${encodeURIComponent(character)}`;
       window.location.href = link;
+      //zamienc
     } else {
       alert('Podaj swoje imię i wybierz maskotkę przed rozpoczęciem quizu!');
     }

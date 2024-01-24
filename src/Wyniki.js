@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import databaseCon from "./databaseCon";
 
-function Quiz() {
+function Wyniki() {
   const [results, setResults] = useState([]);
   const [editedResult, setEditedResult] = useState(null);
   const [showOption, setshowOption] = useState(false);
@@ -109,8 +109,9 @@ function Quiz() {
       </ul>
       {showOption === false &&   <button onClick={() => setshowOption(true)} id="optionButtonBig">Pokaż opcje</button>}
       {showOption === true && <button onClick={() => { setshowOption(false); setEditedResult(null); }} id="optionButtonBig">Schowaj opcje</button>}
+      
     </div>
   );
 }
 
-export default Quiz;
+export default Wyniki;
