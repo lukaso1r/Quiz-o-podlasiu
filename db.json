@@ -1,22 +1,10 @@
 {
   "wyniki": [
     {
-      "id": "3db9",
-      "nick": "Zosia",
-      "punkty": 378,
-      "postac": "groupkot.svg"
-    },
-    {
       "id": "f102",
       "nick": "Komar",
       "punkty": 196,
       "postac": "grouprak.svg"
-    },
-    {
-      "id": "ff2c",
-      "nick": "Kuba",
-      "punkty": 225,
-      "postac": "grouplis.svg"
     },
     {
       "id": "3c88",
@@ -31,16 +19,16 @@
       "postac": "grouprak.svg"
     },
     {
-      "id": "1629",
-      "nick": "Bui",
-      "punkty": 183,
-      "postac": "grouplis.svg"
-    },
-    {
       "id": "de7c",
       "nick": "Iza",
       "punkty": 170,
       "postac": "groupkon.svg"
+    },
+    {
+      "id": "99c5",
+      "nick": "Lukasz",
+      "punkty": 219,
+      "postac": "groupkot.svg"
     }
   ],
   "questions": [

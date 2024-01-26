@@ -69,6 +69,21 @@ function Admin() {
     return true;
   };
 
+  const validateImageFile = (file) => {
+    if (!file) {
+      alert("Wybierz plik obrazu.");
+      return false;
+    }
+  
+    const allowedTypes = ["image/jpeg", "image/png"];
+    if (!allowedTypes.includes(file.type)) {
+      alert("Wybrany plik nie jest obrazem typu JPEG lub PNG.");
+      return false;
+    }
+  
+    return true;
+  };
+
   const handleSubmit = async (event) => {
     event.preventDefault();
 
@@ -87,7 +102,10 @@ function Admin() {
       return;
     }
 
-    // Utwórz tablicę z odpowiedziami
+    if (!validateImageFile(formData.image)) {
+      return;
+    }
+
     const answersArray = [
       formData.correctAnswer,
       formData.np1,
@@ -95,7 +113,6 @@ function Admin() {
       formData.np3,
     ];
 
-    // Sprawdź, czy wszystkie pola wymagane są wypełnione
     if (
       !formData.title ||
       !formData.correctAnswer ||
@@ -108,7 +125,6 @@ function Admin() {
       return;
     }
 
-    // Utwórz obiekt Questionobj z nowym polem imageLink
     const newQuestion = new Questionobj(
       (questions.length +1),
       formData.title,
@@ -121,6 +137,16 @@ function Admin() {
 
     
     const addQ = await databaseCon.createQuestion(newQuestion);
+    setFormData({
+      id: '',
+      title: '',
+      correctAnswer: '',
+      np1: '',
+      np2: '',
+      np3: '',
+      image: '',
+      date: new Date().toLocaleDateString(),
+    });
   };
 
   return (
