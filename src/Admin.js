@@ -60,13 +60,13 @@ function Admin() {
   };
 
   const validateDate = (value, fieldName) => {
-    const currentDate = new Date().toLocaleDateString();
-    const selectedDate = new Date(value).toLocaleDateString();
+    const currentDate = new Date();
+    const selectedDate = new Date(value);
   
-    console.log("Current Date:", currentDate);
-    console.log("Selected Date:", selectedDate);
+    console.log("Current Date:", currentDate.toLocaleDateString());
+    console.log("Selected Date:", selectedDate.toLocaleDateString());
   
-    if (selectedDate < currentDate) {
+    if (selectedDate.toLocaleDateString() < currentDate.toLocaleDateString()) {
       alert(`Błąd walidacji: Pole ${fieldName} powinno być poprawną datą, a data nie może być wcześniejsza niż obecny dzień.`);
       return false;
     }
