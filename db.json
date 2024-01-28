@@ -23,12 +23,6 @@
       "nick": "Iza",
       "punkty": 170,
       "postac": "groupkon.svg"
-    },
-    {
-      "id": "99c5",
-      "nick": "Lukasz",
-      "punkty": 219,
-      "postac": "groupkot.svg"
     }
   ],
   "questions": [
@@ -304,6 +298,19 @@
       ],
       "imageLink": "policjant.png",
       "dateAdded": "17.01.2024"
+    },
+    {
+      "id": 22,
+      "title": "Title",
+      "correctAnswer": "Odp",
+      "answers": [
+        "Odp",
+        "Odp",
+        "Odp",
+        "Odp"
+      ],
+      "imageLink": "zuza.jpg",
+      "date": "28.01.2024"
     }
   ]
 }
