@@ -36,8 +36,8 @@ function Admin() {
     np1: '',
     np2: '',
     np3: '',
-    image: null,
-    date: new Date().toLocaleDateString(),
+    image: '',
+    date: '',
   });
 
   const handleInputChange = (event) => {
@@ -60,10 +60,13 @@ function Admin() {
 
   const validateDate = (value, fieldName) => {
     const currentDate = new Date().toLocaleDateString();
-    const selectedDate = new Date(value);
-    
-    if (selectedDate < currentDate && selectedDate instanceof Date) {
-        alert(`Błąd walidacji: Pole ${fieldName} powinno być poprawną datą, a data nie może być wcześniejsza niż obecny dzień.`,selectedDate, currentDate );
+    const selectedDate = new Date(value).toLocaleDateString();
+  
+    console.log("Current Date:", currentDate);
+    console.log("Selected Date:", selectedDate);
+  
+    if (selectedDate < currentDate) {
+      alert(`Błąd walidacji: Pole ${fieldName} powinno być poprawną datą, a data nie może być wcześniejsza niż obecny dzień.`);
       return false;
     }
     return true;
@@ -137,6 +140,7 @@ function Admin() {
 
     
     const addQ = await databaseCon.createQuestion(newQuestion);
+    
     setFormData({
       id: '',
       title: '',
@@ -145,8 +149,10 @@ function Admin() {
       np2: '',
       np3: '',
       image: '',
-      date: new Date().toLocaleDateString(),
+      date: '',
     });
+
+
   };
 
   return (
@@ -208,6 +214,19 @@ function Admin() {
             required
           />
         </label>
+
+        <label>
+          Data:
+          <br />
+          <input
+            type="date"
+            name="date"
+            value={formData.date}
+            onChange={handleInputChange}
+            required
+          />
+        </label>
+
         <label>
           Zdjęcie:
           

@@ -298,19 +298,6 @@
       ],
       "imageLink": "policjant.png",
       "dateAdded": "17.01.2024"
-    },
-    {
-      "id": 22,
-      "title": "Title",
-      "correctAnswer": "Odp",
-      "answers": [
-        "Odp",
-        "Odp",
-        "Odp",
-        "Odp"
-      ],
-      "imageLink": "zuza.jpg",
-      "date": "28.01.2024"
     }
   ]
 }
