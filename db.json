@@ -8,7 +8,7 @@
     },
     {
       "id": "3c88",
-      "nick": "Zuzanna",
+      "nick": "Zuzannaa",
       "punkty": 271,
       "postac": "grouplis.svg"
     },
@@ -298,6 +298,19 @@
       ],
       "imageLink": "policjant.png",
       "dateAdded": "17.01.2024"
+    },
+    {
+      "id": 32,
+      "title": "Test",
+      "correctAnswer": "Test",
+      "answers": [
+        "Test",
+        "Test",
+        "Test",
+        "Test"
+      ],
+      "imageLink": "zuza.png",
+      "date": "2024-02-03"
     }
   ]
 }

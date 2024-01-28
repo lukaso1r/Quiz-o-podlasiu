@@ -136,7 +136,7 @@ function UserName() {
           images={imageList.map((image, index) => ({ src: image.src, value: index }))}
           onPick={handleImageSelect}
         />
-        <button id="startUserBtn" type="submit" onClick={() => validateForm()}>
+        <button id="startUserBtn" type="button" onClick={() => validateForm()}>
           Rozpocznij!
         </button>
       </form>) :
