@@ -14,7 +14,7 @@
     },
     {
       "id": "6dfc",
-      "nick": "Kasper",
+      "nick": "Kasperr",
       "punkty": 206,
       "postac": "grouprak.svg"
     },
@@ -23,6 +23,12 @@
       "nick": "Iza",
       "punkty": 170,
       "postac": "groupkon.svg"
+    },
+    {
+      "id": "15cf",
+      "nick": "Ssss",
+      "punkty": 139,
+      "postac": "groupkot.svg"
     }
   ],
   "questions": [
