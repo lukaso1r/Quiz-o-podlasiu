@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import databaseCon from "./databaseCon.js";
 
 class Questionobj {
@@ -15,6 +15,7 @@ class Questionobj {
 
 function Admin() {
   const [questions, setQuestions] = useState([]);
+  const fileInputRef = useRef(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -152,12 +153,16 @@ function Admin() {
       date: '',
     });
 
+    if (fileInputRef.current) {
+      fileInputRef.current.value = '';
+    }
+
 
   };
 
   return (
     <div id="adminPanel">
-      <div>Formularz dodawania pytania</div>
+      <div id="addQTitle">Formularz dodawania <br />pytania do bazy</div>
       <form onSubmit={handleSubmit}>
         <label>
           Tytuł:
@@ -236,6 +241,7 @@ function Admin() {
             accept="image/jpeg, image/png"
             onChange={handleInputChange}
             required
+            ref={fileInputRef}
           />
         </label>
         <button id="statsBtn" className="addQ" type="submit">Dodaj</button>

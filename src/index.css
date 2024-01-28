@@ -613,3 +613,9 @@ label {
 #userNameInputContainer label input{
   margin-left: 10px;
 }
+
+#addQTitle{
+  position: absolute;
+  top: 20%;
+  left: 2%;
+}
