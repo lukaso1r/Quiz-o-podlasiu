@@ -29,6 +29,12 @@
       "nick": "Ssss",
       "punkty": 139,
       "postac": "groupkot.svg"
+    },
+    {
+      "id": "fbb5",
+      "nick": "Ssss",
+      "punkty": 127,
+      "postac": "groupbober.svg"
     }
   ],
   "questions": [
@@ -317,6 +323,19 @@
       ],
       "imageLink": "zuza.png",
       "date": "2024-02-03"
+    },
+    {
+      "id": 23,
+      "title": "Lala",
+      "correctAnswer": "Lala",
+      "answers": [
+        "Lala",
+        "Lala",
+        "Lala",
+        "Lala"
+      ],
+      "imageLink": "zuza3.png",
+      "date": "2024-01-30"
     }
   ]
 }
