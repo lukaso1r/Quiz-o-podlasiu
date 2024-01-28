@@ -109,6 +109,16 @@ function UserName() {
     setValidationPassed(false);
   }, [selectValue]);
 
+  useEffect(() => {
+    const thumbnailElements = document.querySelectorAll('.thumbnail');
+    console.log(thumbnailElements.length)
+    thumbnailElements.forEach((element) => {
+      element.setAttribute('alt', 'Postać');
+    });
+  }, []);
+  
+  
+
   return (
     <div id="userName">
       <div id="userNameInputContainer">
@@ -139,7 +149,7 @@ function UserName() {
               />
             </label>
             <ImagePicker
-              images={imageList.map((image, index) => ({ src: image.src, value: image.value }))}
+              images={imageList.map((image, index) => ({ src: image.src, value: image.value}))}
               onPick={handleImageSelect}
             />
             <label>

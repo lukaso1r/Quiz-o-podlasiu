@@ -52,7 +52,7 @@ function Question({ setPlayerPoints, questions, setQuizStatus, quizStatus, dateE
         src={`http://localhost:3000/img/${
           questions.length > id && questions[id] ? questions[id].imageLink : ""
         }`}
-        alt="test"
+        alt="zdjecieQuizu"
       />
       <div id="answers">
         <div
